@@ -95,7 +95,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
             genres.setText(getGenres(movie.getGenreIds()));
             Glide.with(itemView)
                     .load(IMAGE_BASE_URL + movie.getPosterPath())
-                    .apply(RequestOptions.placeholderOf(R.mipmap.ic_launcher))
+                    .apply(RequestOptions.placeholderOf(R.mipmap.loadm))
                     .into(poster);
             this.movie = movie;
         }

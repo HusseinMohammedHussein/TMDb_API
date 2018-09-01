@@ -28,11 +28,17 @@ public class MoviesRepository {
     private TMDbApi api;
 
 
-    //    MoviesRepository Class Constructor...
+    /*
+     *  MoviesRepository Class Constructor...
+     * @param api
+     **/
     public MoviesRepository(TMDbApi api) {
         this.api = api;
     }
 
+    /*
+     * getInstance
+     * **/
     public static MoviesRepository getInstance() {
         if (repository == null) {
             Retrofit retrofit = new Retrofit.Builder()
@@ -44,8 +50,10 @@ public class MoviesRepository {
         return repository;
     }
 
-       /*   getMovies function, with page as variable of dataType INTEGER as parameter,
-            OnGetMoviesCallback interface java class as parameter...  */
+    /*
+     *    getMovies function, with page as variable of dataType INTEGER as parameter,
+     *    OnGetMoviesCallback interface java class as parameter...
+     **/
     public void getMovies(int page, String sortBy, final OnGetMoviesCallback callback) {
         Callback<MovieResponse> call = new Callback<MovieResponse>() {
             @Override
@@ -67,7 +75,9 @@ public class MoviesRepository {
                 callback.onError();
             }
         };
-        //  Sort Movies as selector one of three...
+        /*
+        * Sort Movies as selector one of three...
+        **/
         switch (sortBy) {
             case POPULAR:
                 api.getPopularMovies(API_KEY, LANGUAGE, page)
@@ -102,7 +112,7 @@ public class MoviesRepository {
 
             @Override
             public void onFailure(Call<GenresResponse> call, Throwable t) {
-
+                callback.onError();
             }
         });
     }

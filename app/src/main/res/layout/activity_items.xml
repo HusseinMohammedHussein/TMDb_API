@@ -30,7 +30,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:alpha="0.7"
-            android:text="2018"
+            android:text="@string/item_movie_release_date"
             app:layout_constraintEnd_toStartOf="@id/item_movie_rating"
             app:layout_constraintStart_toEndOf="@id/item_image_poster"
             app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +42,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Movie Title"
+            android:text="@string/item_movie_title"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/item_image_poster"
@@ -56,7 +56,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="Comedy, Action"
+            android:text="@string/item_movie_genre"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/item_image_poster"
             app:layout_constraintTop_toBottomOf="@id/item_movie_title" />
@@ -68,7 +68,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            android:text="8.7"
+            android:text="@string/item_movie_rating"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">MOVIE API</string>
+    <!--Sort Movies-->
+    <string name="sort">sort</string>
     <string name="popular">Popular</string>
     <string name="top_rated">Top Rated</string>
     <string name="upcoming">Upcoming</string>
+    <!-- Items Activity String-->
+    <string name="item_movie_release_date">2018</string>
+    <string name="item_movie_title">Movie Title</string>
+    <string name="item_movie_genre">Comedy, Action</string>
+    <string name="item_movie_rating">8.7</string>
+    <!--Main Activity-->
 </resources>
