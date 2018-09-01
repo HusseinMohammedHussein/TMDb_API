@@ -10,5 +10,4 @@
     <string name="item_movie_title">Movie Title</string>
     <string name="item_movie_genre">Comedy, Action</string>
     <string name="item_movie_rating">8.7</string>
-    <!--Main Activity-->
 </resources>
